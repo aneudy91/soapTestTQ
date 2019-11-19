@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<incidencias>
+  <incidencia>
+    <expedicion>999900000162</expedicion>
+    <referencia>1071923112</referencia>
+    <fecha>14/10/2019 15:30</fecha>
+    <linea>2</linea>
+    <tipo>ENTR</tipo>
+    <descripcion>ENTREGADA</descripcion>
+    <ampliacion>ENTREGADA, OT 81, REP/REC 0080001, CLAVE E, FECHA 27/11/17 16:29</ampliacion>
+    <fecha_incidencia>14/10/2019 16:29:00</fecha_incidencia>
+    <dia_incidencia>14/10/2019</dia_incidencia>
+    <hora_incidencia>1629</hora_incidencia>
+  </incidencia>
+</incidencias>
+

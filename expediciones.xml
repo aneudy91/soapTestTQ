@@ -1,0 +1,52 @@
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservices.geever.alerce.es/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:entrada_expediciones>
+         <cliente>CODIGO_CLIENTE</cliente>
+         <formato>XML</formato>
+         <fichero><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Expediciones>
+  <Expedicion>
+    <ClienteRemitente>Terraquo_test</ClienteRemitente>
+    <MailRemitente>aneudyabreucolon@gmail.com</MailRemitente>
+    <EnviarMail>S</EnviarMail>
+    <NombreDestinatario>Jose López</NombreDestinatario>
+    <PersonaContactoDestinatario>Jose López</PersonaContactoDestinatario>
+    <DireccionDestinatario>Lorem ipsum dolor sit amet, consectetur adipisicing elit</DireccionDestinatario>
+    <PoblacionDestinatario>Lorem ipsum</PoblacionDestinatario>
+    <CodigoPostalDestinatario>99999</CodigoPostalDestinatario>
+    <TelefonoContactoDestinatario>+5219999999999</TelefonoContactoDestinatario>
+    <ReferenciaCliente>TERRAQUO</ReferenciaCliente>
+    <Bultos>1</Bultos>
+    <Kilos>1</Kilos>
+    <ImporteReembolso>0</ImporteReembolso>
+    <ProductoServicio>Pizzas</ProductoServicio>
+    <Observaciones1>Ninguna</Observaciones1>
+    <Observaciones2>Ninguna</Observaciones2>
+    <MailDestinatario>aneudy91@gmail.com</MailDestinatario>
+  </Expedicion>
+  <Expedicion>
+    <ClienteRemitente>Terraquo_test</ClienteRemitente>
+    <MailRemitente>aneudyabreucolon@gmail.com</MailRemitente>
+    <EnviarMail>S</EnviarMail>
+    <NombreDestinatario>Andrés Manuel</NombreDestinatario>
+    <PersonaContactoDestinatario>Andrés Manuel</PersonaContactoDestinatario>
+    <DireccionDestinatario>Lorem ipsum dolor sit amet, consectetur adipisicing elit</DireccionDestinatario>
+    <PoblacionDestinatario>Lorem ipsum</PoblacionDestinatario>
+    <CodigoPostalDestinatario>99999</CodigoPostalDestinatario>
+    <TelefonoContactoDestinatario>+5219999999999</TelefonoContactoDestinatario>
+    <ReferenciaCliente>TERRAQUO</ReferenciaCliente>
+    <Bultos>1</Bultos>
+    <Kilos>1</Kilos>
+    <ImporteReembolso>0</ImporteReembolso>
+    <ProductoServicio>Pizzas</ProductoServicio>
+    <Observaciones1>Ninguna</Observaciones1>
+    <Observaciones2>Ninguna</Observaciones2>
+    <MailDestinatario>aneudy91@gmail.com</MailDestinatario>
+  </Expedicion>
+</Expediciones>]]>
+		</fichero>
+      </web:entrada_expediciones>
+   </soapenv:Body>
+</soapenv:Envelope>
