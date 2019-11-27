@@ -3,14 +3,12 @@
    <soapenv:Header/>
    <soapenv:Body>
       <web:entrada_expediciones>
-         <cliente>CODIGO_CLIENTE</cliente>
+         <cliente>00800025-01</cliente>
          <formato>XML</formato>
-         <fichero><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+         <fichero><![CDATA[<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <Expediciones>
   <Expedicion>
-    <ClienteRemitente>Terraquo_test</ClienteRemitente>
-    <MailRemitente>aneudyabreucolon@gmail.com</MailRemitente>
-    <EnviarMail>S</EnviarMail>
+    <ClienteRemitente>00800025-01</ClienteRemitente>
     <NombreDestinatario>Jose López</NombreDestinatario>
     <PersonaContactoDestinatario>Jose López</PersonaContactoDestinatario>
     <DireccionDestinatario>Lorem ipsum dolor sit amet, consectetur adipisicing elit</DireccionDestinatario>
@@ -21,15 +19,14 @@
     <Bultos>1</Bultos>
     <Kilos>1</Kilos>
     <ImporteReembolso>0</ImporteReembolso>
-    <ProductoServicio>Pizzas</ProductoServicio>
-    <Observaciones1>Ninguna</Observaciones1>
-    <Observaciones2>Ninguna</Observaciones2>
+    <ProductoServicio>80</ProductoServicio>
+    <Observaciones1/>
+    <Observaciones2/>
     <MailDestinatario>aneudy91@gmail.com</MailDestinatario>
   </Expedicion>
   <Expedicion>
-    <ClienteRemitente>Terraquo_test</ClienteRemitente>
-    <MailRemitente>aneudyabreucolon@gmail.com</MailRemitente>
-    <EnviarMail>S</EnviarMail>
+    <ClienteRemitente>00800025-01</ClienteRemitente>
+    <NombreRemitente>Jose López</NombreRemitente>
     <NombreDestinatario>Andrés Manuel</NombreDestinatario>
     <PersonaContactoDestinatario>Andrés Manuel</PersonaContactoDestinatario>
     <DireccionDestinatario>Lorem ipsum dolor sit amet, consectetur adipisicing elit</DireccionDestinatario>
@@ -38,15 +35,15 @@
     <TelefonoContactoDestinatario>+5219999999999</TelefonoContactoDestinatario>
     <ReferenciaCliente>TERRAQUO</ReferenciaCliente>
     <Bultos>1</Bultos>
-    <Kilos>1</Kilos>
+    <Kilos>1.0</Kilos>
     <ImporteReembolso>0</ImporteReembolso>
-    <ProductoServicio>Pizzas</ProductoServicio>
-    <Observaciones1>Ninguna</Observaciones1>
-    <Observaciones2>Ninguna</Observaciones2>
+    <ProductoServicio>10</ProductoServicio>
+    <Observaciones1/>
+    <Observaciones2/>
     <MailDestinatario>aneudy91@gmail.com</MailDestinatario>
   </Expedicion>
 </Expediciones>]]>
-		</fichero>
+		    </fichero>
       </web:entrada_expediciones>
    </soapenv:Body>
 </soapenv:Envelope>
