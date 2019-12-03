@@ -1,4 +1,5 @@
-var xml2js = require('xml2js');
+const xml2js = require('xml2js');
+const parseString = require('xml2js').parseString;
 const fs = require('fs');
  
 var obj = { 
@@ -22,9 +23,9 @@ var obj = {
                 NombreDestinatario              : 'Jose López',
                 PersonaContactoDestinatario     : 'Jose López',
                 DireccionDestinatario           : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-                PoblacionDestinatario           : 'Lorem ipsum',
-                CodigoPostalDestinatario        : '99999',
-                TelefonoContactoDestinatario    : '+5219999999999',
+                PoblacionDestinatario           : 'BARCELONA',
+                CodigoPostalDestinatario        : '08001',
+                TelefonoContactoDestinatario    : '5219999999999',
                 ReferenciaCliente               : 'TERRAQUO',
                 // Fecha                           : '26/11/2019',
                 Bultos                          : '1',
@@ -45,9 +46,9 @@ var obj = {
                 NombreDestinatario              : 'Andrés Manuel',
                 PersonaContactoDestinatario     : 'Andrés Manuel',
                 DireccionDestinatario           : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-                PoblacionDestinatario           : 'Lorem ipsum',
-                CodigoPostalDestinatario        : '99999',
-                TelefonoContactoDestinatario    : '+5219999999999',
+                PoblacionDestinatario           : 'BARCELONA',
+                CodigoPostalDestinatario        : '08001',
+                TelefonoContactoDestinatario    : '5219999999999',
                 ReferenciaCliente               : 'TERRAQUO',
                 // Fecha                           : '26/11/2019',
                 Bultos                          : '1',
@@ -80,7 +81,9 @@ var finalXML = `
 `
 // console.log(finalXML)
 
-fs.writeFile('expediciones2.xml', finalXML, function(err, data) {
+parseString(finalXML, function (err, result) {
+  console.dir(result);
+  fs.writeFile('expediciones.json', JSON.stringify(result), function(err, data) {
     if (err) {
       console.log(err);
     }
@@ -88,6 +91,15 @@ fs.writeFile('expediciones2.xml', finalXML, function(err, data) {
       console.log('updated!');
     }
   });
+});
+// fs.writeFile('expediciones2.xml', finalXML, function(err, data) {
+//     if (err) {
+//       console.log(err);
+//     }
+//     else {
+//       console.log('updated!');
+//     }
+//   });
 
 const soapRequest = require('easy-soap-request');
 const username = 'ANEUDY', passw ='foodsterraquo'
@@ -110,13 +122,34 @@ const sampleHeaders = {
   console.log('statusCode');
   console.log(statusCode);
 
-  fs.writeFile('respuesta1.xml', JSON.stringify(body), function(err, data) {
-    if (err) {
-      console.log(err);
-    }
-    else {
-      console.log('respuesta created!');
-    }
+  parseString(body, function (err, result) {
+    console.log(result);
+
+    let str = result['S:Envelope']['S:Body'][0]['ns2:entrada_expedicionesResponse'][0].return[0]
+    let str2 = str.split(',')
+    
+    let idExpedicion1 = str2[0].split(' ')[1]
+    let idExpedicion2 = str.split(',')[1]
+    let respuesta = str2[0].split(' ')[0]
+    console.log(idExpedicion1)
+    console.log(idExpedicion2)
+    console.log(respuesta)
+    fs.writeFile('response.json', JSON.stringify(result), function(err, data) {
+      if (err) {
+        console.log(err);
+      }
+      else {
+        console.log('updated!');
+      }
+    });
   });
+  // fs.writeFile('respuesta1.xml', JSON.stringify(body), function(err, data) {
+  //   if (err) {
+  //     console.log(err);
+  //   }
+  //   else {
+  //     console.log('respuesta created!');
+  //   }
+  // });
 
 })();

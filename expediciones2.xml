@@ -14,7 +14,7 @@
     <DireccionDestinatario>Lorem ipsum dolor sit amet, consectetur adipisicing elit</DireccionDestinatario>
     <PoblacionDestinatario>Lorem ipsum</PoblacionDestinatario>
     <CodigoPostalDestinatario>99999</CodigoPostalDestinatario>
-    <TelefonoContactoDestinatario>+5219999999999</TelefonoContactoDestinatario>
+    <TelefonoContactoDestinatario>5219999999999</TelefonoContactoDestinatario>
     <ReferenciaCliente>TERRAQUO</ReferenciaCliente>
     <Bultos>1</Bultos>
     <Kilos>1</Kilos>
@@ -32,7 +32,7 @@
     <DireccionDestinatario>Lorem ipsum dolor sit amet, consectetur adipisicing elit</DireccionDestinatario>
     <PoblacionDestinatario>Lorem ipsum</PoblacionDestinatario>
     <CodigoPostalDestinatario>99999</CodigoPostalDestinatario>
-    <TelefonoContactoDestinatario>+5219999999999</TelefonoContactoDestinatario>
+    <TelefonoContactoDestinatario>5219999999999</TelefonoContactoDestinatario>
     <ReferenciaCliente>TERRAQUO</ReferenciaCliente>
     <Bultos>1</Bultos>
     <Kilos>1.0</Kilos>
